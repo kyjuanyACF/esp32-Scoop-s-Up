@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SCOOP'S UP</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  <style>
+
+    @font-face {
+      font-family: 'Rainy Hearts';
+      src: url('./rainyhearts.ttf') format('truetype');    font-weight: normal;
+      font-style: normal;
+      font-display: swap; 
+    }
+
+    body {
+      margin: 0;
+      background: #fddfff;
+      font-family: 'Rainy Hearts';
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 { 
+      color: #4e005c; 
+      font-size: 56px;
+      margin: 16px 0 4px; 
+      font-family: 'Rainy Hearts';
+    }
+
+    p  { 
+      color: #631f7d; 
+      margin: 4px 0 10px;
+      font-family: 'Rainy Hearts';
+    }
+
+    button {
+      font-family: 'rainyhearts', sans-serif;
+      font-size: 20px;
+      color: white;
+      background: #ff81ca;             /* pink */
+      border: 3px solid #ef67b6;       /* outline */
+      border-radius: 20px;             /* rounded edges */
+      padding: 10px 24px;
+      margin: 14px 0;
+      cursor: pointer;
+      box-shadow: 0 5px 0 #ef67b6;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>SCOOP'S UP!</h1>
+  <p>Catch the falling scoops to match the customer's order, bottom to top!</p>
+  <p>Joystick moves the cone · Button tosses the top scoop · Knob sets the speed</p>
+  <!-- <p>NO ESP32 ← → to move, SPACE to toss, − / = for speed.</p> -->
+  <script src="sketch.js"></script>
+</body>
+</html>
